@@ -1,0 +1,90 @@
+.outer-wrapper {
+  background-color: turquoise;
+  width: 440px;
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+}
+
+label {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  /* align-items: center; */
+}
+
+label p {
+  font-size: 1.25rem;
+  margin-bottom: 0.15rem;
+}
+
+label input {
+  border: 2px solid turquoise;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+label select {
+  color: gray;
+  padding: 0.15rem 0.5rem;
+  border: 2px solid turquoise;
+  border-radius: 6px;
+}
+
+label input::placeholder {
+  color: gray;
+}
+
+label + label {
+  margin-top: 0.35rem;
+}
+
+input[type='radio'] {
+  margin-right: 0.25rem;
+  height: 16px;
+  width: 16px;
+  vertical-align: middle;
+}
+
+.radio-input {
+  display: flex;
+  align-items: center;
+}
+
+.radio-wrapper {
+  display: flex;
+  gap: 1rem;
+}
+
+label textarea {
+  resize: none;
+  border: 2px solid turquoise;
+  padding: 0.15rem 0.5rem;
+  border-radius: 6px;
+}
+
+.checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+input[type='checkbox'] {
+  width: 18px;
+  height: 18px;
+}
+
+.btn {
+  width: 100%;
+  margin-top: 0.75rem;
+  background-color: turquoise;
+  border: 2px solid white;
+  padding-block: 0.45rem;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
