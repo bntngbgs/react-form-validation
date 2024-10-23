@@ -22,10 +22,10 @@ const Register = () => {
     let data = { nama, jurusan, gender, alamat, member };
 
     let rules = {
-      nama: 'required',
+      nama: 'required|min:5',
       jurusan: 'required',
       gender: 'required',
-      alamat: 'required',
+      alamat: 'required|min:8',
     };
 
     const validator = new Validator(data, rules);
@@ -58,7 +58,7 @@ const Register = () => {
 
       <form className="form-control" onSubmit={handleSubmit}>
         <label>
-          <p>Nama: </p>
+          <p>Nama Lengkap: </p>
           <input
             type="text"
             name="nama"
@@ -130,7 +130,7 @@ const Register = () => {
           </div>
         </label>
         <label>
-          <p>Alamat :</p>
+          <p>Alamat Lengkap :</p>
           <textarea
             name="alamat"
             id="alamat"
